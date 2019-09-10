@@ -1,4 +1,4 @@
-package com.sbs.stater;
+package com.sbs.starter;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

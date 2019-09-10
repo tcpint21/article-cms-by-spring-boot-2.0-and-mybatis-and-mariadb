@@ -1,4 +1,4 @@
-package com.sbs.stater.controller;
+package com.sbs.starter.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
