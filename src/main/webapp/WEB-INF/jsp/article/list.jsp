@@ -9,9 +9,9 @@
 <title>커뮤니티 사이트 - 게시물 리스트</title>
 </head>
 <body>
-	<h1>게시물 리스트 입니다.</h1>
+	<h1>게시물 리스트</h1>
+	<h2 class="con">전체 게시물 개수 : ${totalCount}</h2>
 
-	<h2>v2</h2>
 	<c:forEach items="${list}" var="article">
 		<section>번호 : ${article.id}, 제목 : ${article.title}</section>
 		<hr>
