@@ -35,7 +35,13 @@ public class ArticleServiceImpl implements ArticleService {
 	}
 
 	@Override
+	public void delete(long id) {
+		articleDao.delete(id);
+	}
+	
+	@Override
 	public void hitUp(long id) {
 		articleDao.hitUp(id);
 	}
+
 }

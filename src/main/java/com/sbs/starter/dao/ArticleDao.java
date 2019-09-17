@@ -18,4 +18,6 @@ public interface ArticleDao {
 	public Article getOne(long id);
 
 	public void hitUp(long id);
+
+	public void delete(long id);
 }

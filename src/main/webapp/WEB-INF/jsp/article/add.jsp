@@ -7,42 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>커뮤니티 사이트 - 게시물 작성</title>
-<style>
-	.con {
-		width: 1000px;
-		margin: 0 auto;
-	}
-	
-	.common-form>div>* {
-		float: left;
-	}
-	
-	.common-form>div::after {
-		content: "";
-		display: block;
-		clear: both;
-	}
-	
-	.common-form>div>span {
-		width: 150px;
-	}
-	
-	.common-form>div>div {
-		width: calc(100% - 150px);
-	}
-	
-	.common-form>div>div>input[type="text"], .common-form>div>div>textarea, .common-form>div>div>input[type="password"] {
-		width: 90%;
-	}
-	
-	.top-menu-1 a::before {
-		content:"[";
-	}
-	
-	.top-menu-1 a::after {
-		content:"]";
-	}	
-</style>
+<link rel="stylesheet" href="/resource/common.css">
 </head>
 <body>
 	<h1>게시물 작성</h1>
