@@ -15,8 +15,10 @@
 	
 	<div class="con">
 		<c:forEach items="${list}" var="article">
-			<section>번호 : ${article.id}, 제목 : ${article.title}</section>
-			<hr>
+			<section>
+				<a href="./detail?id=${article.id}">번호 : ${article.id}, 제목 :
+					${article.title}</a>
+			</section>
 		</c:forEach>
 	</div>
 	
