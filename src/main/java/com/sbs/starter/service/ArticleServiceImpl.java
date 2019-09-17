@@ -44,4 +44,10 @@ public class ArticleServiceImpl implements ArticleService {
 		articleDao.hitUp(id);
 	}
 
+	@Override
+	public void modify(Map<String, Object> param) {
+		articleDao.modify(param);
+	}
+
+
 }
