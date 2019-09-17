@@ -21,13 +21,24 @@ public class ArticleController {
 	@Autowired
 	ArticleService articleService;
 
+	@RequestMapping("/article/detail")
+	public String showDetail(Model model, long id) {
+		Article article = articleService.getOne(id);
+		
+		//articleService.hitUp(id);
+
+		model.addAttribute("article", article);
+
+		return "article/detail";
+	}
+	
 	@RequestMapping("/article/list")
-	public String showMain(Model aModel) {
+	public String showMain(Model model) {
 		List<Article> list = articleService.getList();
 		int totalCount = articleService.getTotalCount();
 
-		aModel.addAttribute("list", list);
-		aModel.addAttribute("totalCount", totalCount);
+		model.addAttribute("list", list);
+		model.addAttribute("totalCount", totalCount);
 
 		return "article/list";
 	}
